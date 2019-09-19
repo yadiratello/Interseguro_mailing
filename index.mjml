@@ -1,0 +1,207 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+    </mj-attributes>
+    <mj-font name="Verdana" href="https://fonts.googleapis.com/css?family=Verdana" />
+
+    <mj-style>
+      .banner {
+        background: url('images/fondo.jpg') top left/cover no-repeat;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .nombre-desktop {
+        display: none;
+      }
+
+      .boton-desktop {
+        display: none;
+      }
+
+      .seccion-oferta {
+        width: 350px;
+        border: aqua 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .seccion-desktop-oferta {
+        display: none;
+      }
+
+      .seccion-desktop-seguro {
+        display: none
+      }
+
+      @media (min-width: 700px) {
+        .cuerpo {
+          width=700px;
+        }
+
+        .logo {
+          width: 700px;
+          background: red;
+        }
+
+        .banner {
+          display:flex;
+          width: 700px;
+          height:300px;
+        }
+
+        .nombre-movil {
+          display: none;
+        }
+
+        .nombre-desktop {
+          display: block;
+        }
+
+
+        .adquiere {
+          display: none;
+        }
+
+        .seccion-movil-oferta {
+          display: none;
+        }
+
+        .seccion-desktop-oferta {
+          display: block;
+        }
+
+        .seccion-movil-seguro {
+          display: none
+        }
+
+        .seccion-desktop-seguro {
+          display: block;
+        }
+
+        .boton-desktop {
+          display: block;
+        }
+
+        .boton-movil {
+          display: none;
+        }
+
+        .pie {
+          width: 700px;
+          margin: auto;
+        }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body css-class="cuerpo" background-color="#fff" color="#015091" width="">
+    <!--logo-->
+    <mj-section css-class="logo" padding="-10px">
+      <mj-column>
+        <mj-image src="images/header_LogoInterseguroV1.png" align="left"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="banner nombre-movil" padding="-10px">
+      <mj-column>
+        <mj-text color="#015091" font-size="20px" font-family="verdana" align="center" padding-left="50px">HOLA,</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="banner nombre-desktop" padding="-10px">
+      <mj-column>
+        <mj-text color="#015091" font-size="20px" font-family="verdana" align="right">HOLA, KAT</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+    </mj-raw>
+
+    <mj-section css-class="seccion-desktop-seguro">
+      <mj-column>
+        <mj-text color="#015091" font-size="18px" font-weight="bold" align="center">No te falta nada para asegurar tu carro.</mj-text>
+        <mj-text color="#015091" font-size="18px" font-weight="bold" align="center">Adquiere tu Seguro vehicular por solo $33..</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="seccion-movil-seguro">
+      <mj-column>
+        <mj-text color="#015091" font-size="18px" font-weight="bold" align="center">Cotiza tu Seguro Vehicular</mj-text>
+        <mj-text color="#015091" font-size="18px" font-weight="bold" align="center">Online y al mejor precio</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    </mj-raw>
+
+    <mj-section css-class="seccion-movil-oferta seccion-oferta">
+      <mj-column mj-class="">
+        <mj-text color="#DD206C" font-size="16px" align="left">Desde</mj-text>
+        <mj-text color="#015091" font-size="45px" font-weight="bold" align="center">$33/mes..</mj-text>
+        <mj-text color="#015091" align="right">Incluye IGV</mj-text>
+        <mj-text color="#015091" align="right">Sin intereses</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="seccion-desktop-oferta seccion-oferta">
+      <mj-column mj-class="">
+        <mj-text color="#DD206C" font-size="16px" align="left">Por</mj-text>
+        <mj-text color="#015091" font-size="48px" font-weight="bold" align="center">$60/mes..</mj-text>
+        <mj-text color="#015091" align="right">Incluye IGV</mj-text>
+        <mj-text color="#015091" align="right">Sin intereses</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-button css-class="boton-movil" font-family="Verdana" background-color="#DD206C" text-transform="uppercase" color="white">¡Cómpralo Aquí!</mj-button>
+        <mj-button css-class="boton-desktop" font-family="Verdana" background-color="#DD206C" text-transform="uppercase" color="white">¡Cómpralo Ya!</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="adquiere">
+      <mj-column>
+        <mj-text align="center" font-family="Verdana" font-weight="bold" color="#015091">Adquiere nuestro seguro y recibe los mejores beneficios</mj-text>
+        <mj-image src="images/iconos.png"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <!-- footer-->
+    <mj-section padding="-5px" css-class="pie" text-align="center" background-color="#255091">
+      <mj-column>
+        <mj-image align="center" width="150px" src="images/logo-interseguro.png" align="left"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-social font-size="25px" icon-size="20px" mode="horizontal">
+          <mj-social-element padding="7px" icon-size="18px" src="images/blogger.png" name="blogger" href="https://mjml.io/"></mj-social-element>
+          <mj-social-element padding="7px" icon-size="12px" src="images/facebook.png" name="facebook" href="https://mjml.io/"></mj-social-element>
+          <mj-social-element padding="7px" src="images/instagram.png" name="instagram" href="https://mjml.io/"></mj-social-element>
+          <mj-social-element padding="7px" src="images/linkein.png" name="linkedin" href="https://mjml.io/"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="-5px" css-class="pie" text-align="center" background-color="#255091">
+      <mj-column>
+        <mj-social color="white" font-size="13px" icon-size="20px" align="center">
+          <mj-social-element icon-size="18px" src="images/blogger.png" name="blogger" href="https://mjml.io/">
+            <mj-text color="#fff" font-size="20px" align="left">segurovehicular@interseguro.com.pe</mj-text>
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+      <mj-column>
+        <mj-social color="white" font-size="12px" icon-size="20px" align="center">
+          <mj-social-element icon-size="18px" src="images/telefono.png" name="blogger" href="https://mjml.io/">
+            <mj-text color="#fff" font-size="20px" align="right">{01} 500 0000</mj-text>
+          </mj-social-element>
+          <mj-social-element icon-size="18px" src="images/whatsapp.png" name="blogger" href="https://mjml.io/">
+            <mj-image src="images/whatsapp.png"></mj-image>
+            <mj-text color="#fff" font-size="20px" align="right">977 822 185</mj-text>
+          </mj-social-element>
+        </mj-social>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
